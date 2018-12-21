@@ -81,3 +81,20 @@ html, body {
   line-height: inherit;
   white-space: nowrap;
 }
+
+/* Footer */
+.footer-container {
+  background-color: $darkGray;
+  color: $white;
+  padding: 5em 5em 5em 5em;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 5em;
+}
+
+/* Main Content Section */
+.main-content {
+  margin-top: 15em;
+}

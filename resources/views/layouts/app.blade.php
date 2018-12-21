@@ -10,4 +10,4 @@
 
     <!-- Load Footer -->
     @component('components.footer')
-    @endcomponent-->
+    @endcomponent
