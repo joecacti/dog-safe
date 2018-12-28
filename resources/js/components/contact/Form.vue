@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2>Contact Us</h2>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group id="exampleInputGroup1"
                     label="Email address:"
@@ -38,16 +39,23 @@
                             name="radioInline">
         </b-form-radio-group>
       </b-form-group>
-      <b-form-group 
-                    v-if="form.contactSelected == 'phone'"
-                    id="exampleInputGroup3"
-                    label="Best Time to Call:"
-                    label-for="exampleInput3">
-        <b-form-select id="exampleInput3"
-                      :options="timeOptions"
-                      v-model="form.time">
-        </b-form-select>
-      </b-form-group>
+      <transition 
+                name="custom-classes-transition" 
+                mode="out-in"
+                enter-active-class="animated fadeInDown"
+                leave-active-class="animated fadeOutUp"
+      >
+        <b-form-group 
+                      v-if="form.contactSelected == 'phone'"
+                      id="exampleInputGroup3"
+                      label="Best Time to Call:"
+                      label-for="exampleInput3">
+          <b-form-select id="exampleInput3"
+                        :options="timeOptions"
+                        v-model="form.time">
+          </b-form-select>
+        </b-form-group>
+      </transition>
       <b-form-group>
         <b-form-textarea id="textarea1"
                         v-model="form.questionsComments"

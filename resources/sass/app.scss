@@ -2,6 +2,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+// Animate.css
+@import "node_modules/animate.css/animate";
+
 // Variables
 @import 'variables';
 
@@ -17,32 +20,13 @@ html, body {
   margin: 0;
 }
 
-.full-height {
-  height: 100vh;
-}
-
-.flex-center {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.position-ref {
-  position: relative;
-}
-
-.top-right {
-  position: absolute;
-  right: 10px;
-  top: 18px;
-}
-
-.content {
-  text-align: center;
-}
-
 .title {
   font-size: 84px;
+}
+
+.benefits-container {
+  background-color: $darkGray;
+  height: 80px;
 }
 
 .links > a {
@@ -60,6 +44,10 @@ html, body {
 }
 
 /* Main Navigation */
+.navbar {
+  font-size: 1.45em;
+}
+
 .nav-container {
   display: flex;
   justify-content: center;
@@ -82,11 +70,67 @@ html, body {
   white-space: nowrap;
 }
 
+/* Banner */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Testimonial */
+.testimonial img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.testimonial {
+  margin-bottom: 4.3em;
+}
+
+.testimonial h2, #contact-form h2, #lead-in h2 {
+  margin-bottom: 1.5em;
+}
+
 /* Footer */
 .footer-container {
   background-color: $darkGray;
   color: $white;
-  padding: 5em 5em 5em 5em;
+  padding: 15em 5em 1em 5em;
+  margin-top: 10em;
 }
 
 /* Contact Form */
@@ -98,3 +142,32 @@ html, body {
 .main-content {
   margin-top: 15em;
 }
+
+/* Media Queries */
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  .section {
+    height: 440px;
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .section {
+    height: 560px;
+  }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .section {
+    height: 790px;
+  }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  .section {
+    height: 800px;
+  }
+ }

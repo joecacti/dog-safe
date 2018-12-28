@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-        <div class="full-height">
+<!--
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -15,29 +15,67 @@
                     @endauth
                 </div>
             @endif
-            <div class="container main-content">
-                <div class="flex-center position-ref ">
-                    <div class="content">
-                        <div class="title m-b-md">
-                            Dog Safe
-                        </div>
+-->
+            <header>
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                </video>
+                <div class="container h-100">
+                    <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-3">DogSafe</h1>
+                        <h2>Invisible Secure Adaptable Reliable Convenient</h2>
+                    </div>
+                    </div>
+                </div>
+            </header>
 
-                        <div class="links">
-                            <a href="#">Invisible</a>
-                            <a href="https://laracasts.com">Safe</a>
-                            <a href="#">Secure</a>
-                            <a href="#">Adaptable</a>
-                            <a href="#">Reliable</a>
-                            <a href="#">Convenient</a>
+            <section class="my-5" id="lead-in">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <h2>Lead in</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Sed enim ut sem viverra. Sagittis vitae et leo duis ut. Ac odio tempor orci dapibus ultrices. Turpis egestas maecenas pharetra convallis posuere morbi leo. Pellentesque elit eget gravida cum. Amet massa vitae tortor condimentum lacinia quis. Faucibus interdum posuere lorem ipsum dolor. Quis vel eros donec ac. Lorem sed risus ultricies tristique nulla aliquet. Magna fringilla urna porttitor rhoncus dolor purus.</p>
+                            <p>Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. A lacus vestibulum sed arcu non. Dignissim diam quis enim lobortis scelerisque fermentum dui. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Faucibus interdum posuere lorem ipsum dolor sit amet. Ultrices eros in cursus turpis massa tincidunt dui ut. Semper viverra nam libero justo laoreet. Ac tincidunt vitae semper quis. Ultrices dui sapien eget mi proin sed libero enim. Amet facilisis magna etiam tempor orci. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Nulla malesuada pellentesque elit eget. Fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <hr />
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex-center position-ref">
-                    <div class="contact-form col-12">
-                        <contact-form></contact-form>
+            </section>
+
+            <section class="my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto testimonial">
+                            <h2>Testimonials</h2>
+                            <img src="/images/joey-boxer.jpg" alt="dog-safe-testimonial" class="mr-5 float-left">
+                            <p>DogSafe was extremely knowledgeable and understanding of my needs.  They took their time in explaining the system and how I could best utilize it.
+                                They were very flexible with installation scheduling and once they were finished I knew I made the right choice.
+                            </p>
+                            <p>- Jennifer L.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <hr />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+
+            <section class="my-5" id="contact-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <contact-form></contact-form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 @endsection
