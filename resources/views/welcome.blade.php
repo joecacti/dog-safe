@@ -54,8 +54,7 @@
                         <div class="col-md-8 mx-auto testimonial">
                             <h2>Testimonials</h2>
                             <img src="/images/joey-boxer.jpg" alt="dog-safe-testimonial" class="mr-5 float-left">
-                            <p>DogSafe was extremely knowledgeable and understanding of my needs.  They took their time in explaining the system and how I could best utilize it.
-                                They were very flexible with installation scheduling and once they were finished I knew I made the right choice.
+                            <p>We are so pleased with the professionalism that DogSafe had when they came out to our home to install our invisible fence. DogSafe’s knowledge and capabilities put our minds at ease knowing that our three dogs are secure within the invisible fence. We love not having to use leashes to take our dogs outside anymore!
                             </p>
                             <p>- Jennifer L.</p>
                         </div>
