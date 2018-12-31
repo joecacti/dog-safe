@@ -54626,7 +54626,7 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("h2", [_vm._v("Contact Us")]),
+      _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
       _vm._v(" "),
       _vm.show
         ? _c(
