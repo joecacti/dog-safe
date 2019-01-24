@@ -35,9 +35,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 mx-auto">
-                            <h1 class="title">Lead in</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Sed enim ut sem viverra. Sagittis vitae et leo duis ut. Ac odio tempor orci dapibus ultrices. Turpis egestas maecenas pharetra convallis posuere morbi leo. Pellentesque elit eget gravida cum. Amet massa vitae tortor condimentum lacinia quis. Faucibus interdum posuere lorem ipsum dolor. Quis vel eros donec ac. Lorem sed risus ultricies tristique nulla aliquet. Magna fringilla urna porttitor rhoncus dolor purus.</p>
-                            <p>Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. A lacus vestibulum sed arcu non. Dignissim diam quis enim lobortis scelerisque fermentum dui. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Faucibus interdum posuere lorem ipsum dolor sit amet. Ultrices eros in cursus turpis massa tincidunt dui ut. Semper viverra nam libero justo laoreet. Ac tincidunt vitae semper quis. Ultrices dui sapien eget mi proin sed libero enim. Amet facilisis magna etiam tempor orci. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Nulla malesuada pellentesque elit eget. Fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
+                            <h1 class="title">Dedicated Pet Professionals</h1>
+                            <p>At DogSafe, we provide professional installation, service, and training for underground pet containment systems. We are committed to superior customer service and we guarantee DogSafe Underground Fences will give your pet the freedom they love with the safety and peace of mind you’re looking for.</p>
+                            <p>DogSafe Underground Fences provide a secure, reliable, adaptable, boundary for your pets. Our DogSafe Fence creates an invisible boundary to keep your pets in your yard and away from places you don’t want them, such as gardens, driveways, barns, and swimming pools.</p>
+                            <div class="alert alert-success" role="alert">
+                            <i class="fas fa-info-circle"></i> Installation normally takes a few hours and the training is uniquely humane to provide the best experience for you and your pet.
+                            </div>
+                            <ul class="fa-ul check-list">
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span> DogSafe systems use rechargeable collars so you never need to buy costly batteries.</li>
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span> Collar receivers are waterproof.</li>
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span> Programmable for any size dog.</li>
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span> Expandable for large yards over 10 acres.</li>
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span> Lifetime Warranty.</li>
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span> 100% Satisfaction Guarantee.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="row">

@@ -11,6 +11,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Font Awesome
+@import 'node_modules/@fortawesome/fontawesome-free/css/all';
+
 html, body {
   background-color: #fff;
   color: #636b6f;
@@ -182,6 +185,10 @@ label {
 /* Main Content Section */
 .main-content {
   margin-top: 15em;
+}
+
+.check-list li .fa-li{
+  color: $success;
 }
 
 /* Media Queries */
