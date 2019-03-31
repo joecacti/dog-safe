@@ -19699,6 +19699,13 @@ p {
   white-space: nowrap;
 }
 
+:target {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
 /* Banner */
 
 header {

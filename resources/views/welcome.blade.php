@@ -77,8 +77,8 @@
                     </div>
                 </div>
             </section>
-
-            <section class="my-5" id="contact-form">
+            <a id='contact-form'></a>
+            <section class="my-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 mx-auto">

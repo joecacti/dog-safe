@@ -1835,6 +1835,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'contact-form',
   data: function data() {
@@ -54934,6 +54941,20 @@ var render = function() {
     [
       _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
       _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Please contact us to request more information or a free estimate - or just to let us know about your experience with DogSafe."
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("We’d love to hear from you!")]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
       _vm.show
         ? _c(
             "b-form",
@@ -55128,7 +55149,28 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("Phone: "),
+      _c("a", { attrs: { href: "tel:8443647233" } }, [_vm._v("844-364-7233")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("Email: "),
+      _c("a", { attrs: { href: "mailto:matt@dogsafe.com" } }, [
+        _vm._v("matt@dogsafe.com")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -66420,7 +66462,7 @@ Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('contact-form', __webpack_require__(/*! ./components/contact/Form.vue */ "./resources/js/components/contact/Form.vue"));
+Vue.component('contact-form', __webpack_require__(/*! ./components/contact/Form.vue */ "./resources/js/components/contact/Form.vue").default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

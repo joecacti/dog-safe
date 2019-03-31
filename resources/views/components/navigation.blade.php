@@ -13,9 +13,8 @@
                     <b-nav-item href="about">About</b-nav-item>
                     <b-nav-item href="what-we-do">What we do</b-nav-item>
                     <b-nav-item href="{{ url('/#contact-form') }}">Contact</b-nav-item>
-                    <b-nav-item href="blog">Blog</b-nav-item>
                 </b-navbar-nav>
-                <b-nav-form><a href="tel:8443647233" class="btn btn-success">Call 844-DogSafe</a></b-nav-form>
+                <b-nav-form><a href="tel:6143609400" class="btn btn-success">Call 614-360-9400</a></b-nav-form>
             </b-collapse>
         </b-navbar>
     </div>
@@ -44,7 +43,7 @@
             
         </b-navbar>
         <div class="text-center call-button">
-            <a href="tel:8443647233" class="btn btn-success">Call 844-DogSafe</a>
+            <a href="tel:6143609400" class="btn btn-success">Call 614-360-9400</a>
         </div>  
     </div>
 </div>

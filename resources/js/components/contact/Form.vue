@@ -1,6 +1,13 @@
 <template>
   <div>
     <h1 class="title">Contact Us</h1>
+    <p>Please contact us to request more information or a free estimate - or just to let us know about your experience with DogSafe.</p>
+    <p>We’d love to hear from you!</p>
+
+    <p>Phone: <a href="tel:8443647233">844-364-7233</a></p>
+    <p>Email: <a href="mailto:matt@dogsafe.com">matt@dogsafe.com</a></p>
+
+    <hr />
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group id="exampleInputGroup1"
                     label="Email address:"

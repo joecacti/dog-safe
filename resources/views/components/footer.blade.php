@@ -5,15 +5,12 @@
                     <div class="d-flex justify-content-between">
                         <div class="text-center col-xs-12 col-s-12">
                             <h3>Columbus</h3>
-                            <h4><a href="tel:6143609400">614-360-9400</a></h4>
                         </div>
                         <div class="text-center">
                             <h3>Dayton</h3>
-                            <h4><a href="tel:9377090096">937-709-0096</a></h4>
                         </div>
                         <div class="text-center">
                             <h3>Cincinnati</h3>
-                            <h4><a href="tel:5132753619">513-275-3619</a></h4>
                         </div>
                     </div>
                     <div>
