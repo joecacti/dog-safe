@@ -55166,7 +55166,7 @@ var staticRenderFns = [
     return _c("p", [
       _vm._v("Email: "),
       _c("a", { attrs: { href: "mailto:matt@dogsafe.com" } }, [
-        _vm._v("matt@dogsafe.com")
+        _vm._v("matt@godogsafe.com")
       ])
     ])
   }
