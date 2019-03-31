@@ -4,7 +4,7 @@
     <p>Please contact us to request more information or a free estimate - or just to let us know about your experience with DogSafe.</p>
     <p>We’d love to hear from you!</p>
 
-    <p>Phone: <a href="tel:8443647233">844-364-7233</a></p>
+    <p>Phone: <a href="tel:6143609400">614-360-9400</a></p>
     <p>Email: <a href="mailto:matt@dogsafe.com">matt@dogsafe.com</a></p>
 
     <hr />

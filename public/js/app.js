@@ -55156,7 +55156,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", [
       _vm._v("Phone: "),
-      _c("a", { attrs: { href: "tel:8443647233" } }, [_vm._v("844-364-7233")])
+      _c("a", { attrs: { href: "tel:6143609400" } }, [_vm._v("614-360-9400")])
     ])
   },
   function() {
