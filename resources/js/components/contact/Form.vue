@@ -5,7 +5,7 @@
     <p>We’d love to hear from you!</p>
 
     <p>Phone: <a href="tel:6143609400">614-360-9400</a></p>
-    <p>Email: <a href="mailto:matt@dogsafe.com">matt@dogsafe.com</a></p>
+    <p>Email: <a href="mailto:matt@dogsafe.com">matt@godogsafe.com</a></p>
 
     <hr />
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
