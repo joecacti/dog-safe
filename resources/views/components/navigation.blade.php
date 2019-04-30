@@ -14,7 +14,7 @@
                     <b-nav-item href="what-we-do">What we do</b-nav-item>
                     <b-nav-item href="{{ url('/#contact-form') }}">Contact</b-nav-item>
                 </b-navbar-nav>
-                <b-nav-form><a href="tel:6143609400" class="btn btn-success">Call 614-360-9400</a></b-nav-form>
+                <b-nav-form><a href="tel:7406065552" class="btn btn-success">Call 740-606-5552</a></b-nav-form>
             </b-collapse>
         </b-navbar>
     </div>
@@ -43,7 +43,7 @@
             
         </b-navbar>
         <div class="text-center call-button">
-            <a href="tel:6143609400" class="btn btn-success">Call 614-360-9400</a>
+            <a href="tel:7406065552" class="btn btn-success">Call 740-606-5552</a>
         </div>  
     </div>
 </div>

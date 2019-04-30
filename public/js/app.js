@@ -1763,6 +1763,7 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _FormMixin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../FormMixin */ "./resources/js/components/FormMixin.js");
 //
 //
 //
@@ -1801,113 +1802,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'contact-form',
+  mixins: [_FormMixin__WEBPACK_IMPORTED_MODULE_0__["default"]],
   data: function data() {
     return {
-      form: {
-        email: '',
-        name: '',
-        phone: '',
-        contactSelected: '',
-        time: 'anytime',
-        questionsComments: ''
-      },
-      contactOptions: [{
-        text: 'Email',
-        value: 'email'
-      }, {
-        text: 'Phone',
-        value: 'phone'
-      }],
-      timeOptions: [{
-        text: 'Anytime',
-        value: 'anytime'
-      }, {
-        text: 'Weekday Mornings',
-        value: 'weekday-mornings'
-      }, {
-        text: 'Weekday Afternoons',
-        value: 'weekday-afternoons'
-      }, {
-        text: 'Weekday After 5pm',
-        value: 'weekday-evenings'
-      }, {
-        text: 'Weekend Mornings',
-        value: 'weekend-mornings'
-      }, {
-        text: 'Weekend Afternoons',
-        value: 'weekend-afternoons'
-      }, {
-        text: 'Weekend After 5pm',
-        value: 'weekend-evenings'
-      }],
-      show: true
+      'action': '/submit'
     };
-  },
-  methods: {
-    onSubmit: function onSubmit(evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
-    },
-    onReset: function onReset(evt) {
-      var _this = this;
-
-      evt.preventDefault();
-      /* Reset our form values */
-
-      this.form.email = '';
-      this.form.name = '';
-      this.form.food = null;
-      this.form.checked = [];
-      /* Trick to reset/clear native browser form validation state */
-
-      this.show = false;
-      this.$nextTick(function () {
-        _this.show = true;
-      });
-    }
   }
 });
 
@@ -54936,218 +54837,144 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Please contact us to request more information or a free estimate - or just to let us know about your experience with DogSafe."
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [_vm._v("We’d love to hear from you!")]),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _vm.show
-        ? _c(
-            "b-form",
-            { on: { submit: _vm.onSubmit, reset: _vm.onReset } },
-            [
-              _c(
-                "b-form-group",
-                {
-                  attrs: {
-                    id: "exampleInputGroup1",
-                    label: "Email address:",
-                    "label-for": "exampleInput1",
-                    description:
-                      "We'll never share your email with anyone else."
-                  }
-                },
-                [
-                  _c("b-form-input", {
-                    attrs: {
-                      id: "exampleInput1",
-                      type: "email",
-                      required: "",
-                      placeholder: "Enter email"
-                    },
-                    model: {
-                      value: _vm.form.email,
-                      callback: function($$v) {
-                        _vm.$set(_vm.form, "email", $$v)
-                      },
-                      expression: "form.email"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "b-form-group",
-                {
-                  attrs: {
-                    id: "exampleInputGroup2",
-                    label: "Your Name:",
-                    "label-for": "exampleInput2"
-                  }
-                },
-                [
-                  _c("b-form-input", {
-                    attrs: {
-                      id: "exampleInput2",
-                      type: "text",
-                      required: "",
-                      placeholder: "Enter name"
-                    },
-                    model: {
-                      value: _vm.form.name,
-                      callback: function($$v) {
-                        _vm.$set(_vm.form, "name", $$v)
-                      },
-                      expression: "form.name"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "b-form-group",
-                {
-                  attrs: {
-                    id: "exampleInputGroup3",
-                    label: "Telephone:",
-                    "label-for": "exampleInput3"
-                  }
-                },
-                [
-                  _c("b-form-input", {
-                    attrs: {
-                      id: "exampleInput3",
-                      type: "text",
-                      required: "",
-                      placeholder: "Enter Telephone Number"
-                    },
-                    model: {
-                      value: _vm.form.phone,
-                      callback: function($$v) {
-                        _vm.$set(_vm.form, "phone", $$v)
-                      },
-                      expression: "form.phone"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "b-form-group",
-                { attrs: { label: "Preferred Method of Contact" } },
-                [
-                  _c("b-form-radio-group", {
-                    attrs: { options: _vm.contactOptions, name: "radioInline" },
-                    model: {
-                      value: _vm.form.contactSelected,
-                      callback: function($$v) {
-                        _vm.$set(_vm.form, "contactSelected", $$v)
-                      },
-                      expression: "form.contactSelected"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "transition",
-                {
-                  attrs: {
-                    name: "custom-classes-transition",
-                    mode: "out-in",
-                    "enter-active-class": "animated fadeInDown",
-                    "leave-active-class": "animated fadeOutUp"
-                  }
-                },
-                [
-                  _vm.form.contactSelected == "phone"
-                    ? _c(
-                        "b-form-group",
-                        {
-                          attrs: {
-                            id: "exampleInputGroup3",
-                            label: "Best Time to Call:",
-                            "label-for": "exampleInput3"
-                          }
-                        },
-                        [
-                          _c("b-form-select", {
-                            attrs: {
-                              id: "exampleInput3",
-                              options: _vm.timeOptions
-                            },
-                            model: {
-                              value: _vm.form.time,
-                              callback: function($$v) {
-                                _vm.$set(_vm.form, "time", $$v)
-                              },
-                              expression: "form.time"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    : _vm._e()
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "b-form-group",
-                [
-                  _c("b-form-textarea", {
-                    attrs: {
-                      id: "textarea1",
-                      placeholder: "Questions/Comments",
-                      rows: 3,
-                      "max-rows": 6
-                    },
-                    model: {
-                      value: _vm.form.questionsComments,
-                      callback: function($$v) {
-                        _vm.$set(_vm.form, "questionsComments", $$v)
-                      },
-                      expression: "form.questionsComments"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "b-button",
-                { attrs: { type: "submit", variant: "primary" } },
-                [_vm._v("Submit")]
-              ),
-              _vm._v(" "),
-              _c("b-button", { attrs: { type: "reset", variant: "danger" } }, [
-                _vm._v("Reset")
-              ])
+  return _c("div", [
+    _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
+    _vm._v(" "),
+    _c("p", [
+      _vm._v(
+        "Please contact us to request more information or a free estimate - or just to let us know about your experience with DogSafe."
+      )
+    ]),
+    _vm._v(" "),
+    _c("p", [_vm._v("We’d love to hear from you!")]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("hr"),
+    _vm._v(" "),
+    _c(
+      "form",
+      {
+        on: {
+          submit: function($event) {
+            $event.preventDefault()
+            return _vm.submit($event)
+          }
+        }
+      },
+      [
+        _c("div", { staticClass: "form-group" }, [
+          _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.fields.name,
+                expression: "fields.name"
+              }
             ],
-            1
-          )
-        : _vm._e()
-    ],
-    1
-  )
+            staticClass: "form-control",
+            attrs: { type: "text", name: "name", id: "name" },
+            domProps: { value: _vm.fields.name },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.fields, "name", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _vm.errors && _vm.errors.name
+            ? _c("div", { staticClass: "text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.name[0]))
+              ])
+            : _vm._e()
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c("label", { attrs: { for: "email" } }, [_vm._v("E-mail")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.fields.email,
+                expression: "fields.email"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "email", name: "email", id: "email" },
+            domProps: { value: _vm.fields.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.fields, "email", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _vm.errors && _vm.errors.email
+            ? _c("div", { staticClass: "text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.email[0]))
+              ])
+            : _vm._e()
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c("label", { attrs: { for: "message" } }, [_vm._v("Message")]),
+          _vm._v(" "),
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.fields.message,
+                expression: "fields.message"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { id: "message", name: "message", rows: "5" },
+            domProps: { value: _vm.fields.message },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.fields, "message", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _vm.errors && _vm.errors.message
+            ? _c("div", { staticClass: "text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.message[0]))
+              ])
+            : _vm._e()
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+          [_vm._v("Send message")]
+        ),
+        _vm._v(" "),
+        _vm.success
+          ? _c("div", { staticClass: "alert alert-success mt-3" }, [
+              _vm._v("\n          Message sent!\n      ")
+            ])
+          : _vm._e()
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -66530,6 +66357,52 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/FormMixin.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/FormMixin.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      fields: {},
+      errors: {},
+      success: false,
+      loaded: true,
+      action: ''
+    };
+  },
+  methods: {
+    submit: function submit() {
+      var _this = this;
+
+      if (this.loaded) {
+        this.loaded = false;
+        this.success = false;
+        this.errors = {};
+        axios.post(this.action, this.fields).then(function (response) {
+          _this.fields = {}; //Clear input fields.
+
+          _this.loaded = true;
+          _this.success = true;
+        }).catch(function (error) {
+          _this.loaded = true;
+
+          if (error.response.status === 422) {
+            _this.errors = error.response.data.errors || {};
+          }
+        });
+      }
+    }
+  }
+});
 
 /***/ }),
 
