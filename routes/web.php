@@ -17,3 +17,4 @@ Route::get('/{route}', function($route) {
     return view($route);
 });
 
+Route::post('/submit', 'ContactFormController@submit');
