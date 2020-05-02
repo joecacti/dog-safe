@@ -64965,8 +64965,8 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", [
       _vm._v("Email: "),
-      _c("a", { attrs: { href: "mailto:matt@dogsafe.com" } }, [
-        _vm._v("matt@godogsafe.com")
+      _c("a", { attrs: { href: "mailto:info@godogsafe.com" } }, [
+        _vm._v("info@godogsafe.com")
       ])
     ])
   }

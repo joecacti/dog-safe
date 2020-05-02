@@ -5,7 +5,7 @@
     <p>We’d love to hear from you!</p>
 
     <p>Phone: <a href="tel:7406065552">740-606-5552</a></p>
-    <p>Email: <a href="mailto:matt@dogsafe.com">matt@godogsafe.com</a></p>
+    <p>Email: <a href="mailto:info@godogsafe.com">info@godogsafe.com</a></p>
 
     <hr />
     <form @submit.prevent="submit">
